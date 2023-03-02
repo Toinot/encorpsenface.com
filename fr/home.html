@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/js/carrousel.js"></script>
+    <script src="/js/logo.js"></script>
 </head>
 <body>
     <header>
@@ -17,19 +18,145 @@
                 <a href="">Découvrir</a>
                 <a href="">Réserver</a>
             </nav>
-            <div class="logo">
+            <div class="welcome logo">
                 <img src="/fr/media/logo.png" style="max-width: 25%;" alt="">
                 <img src="/fr/media/logo_text.svg" id="logo-text" style="opacity: 0; transition: opacity 1s; max-width: 100%;" alt="">
-                <script>
-                    $('.logo-header').ready( function () {
-                        $('#logo-text').css('opacity', 1);
-                    });
-                </script>
             </div>
-            <div class="presentation">
+            <div class="welcome presentation">
                 <h2>Wùo Taï | Osteodanse & Massage facial japonais | Kobido</h2>
             </div>
         </div>
     </header>
+    <main>
+        <section>
+            <h2>Wùo Taï</h2>
+            <p>
+                Le Wuo Taï est une alternative thérapeutique par le geste, un enchainement calme de postures issues de l’ostéopathie et mises en mouvements circulaires qui définissent la notion de danse.
+                « Wùo » signifie le cercle et la paire.
+                « Taï » grand comme le dehors.
+                Le Wuo Taï peut donc être traduit comme « Entre deux cercles ».
+                Par des points d’appuis et des suspensions, il a pour objectif de relâcher, de décrisper et redonner de la mobilité.
+                Le rôle principal du mouvement est de déjouer le contrôle du cerveau pour se propager au cœur des structures du receveur dans les sphères articulaires, viscérales et celles des fascias.
+                Le mouvement va se répandre ainsi là où il est juste qu’il aille, vous retrouvez la mobilité là où il est juste qu’elle soit.
+                Le donneur n’impose ni force ni contrainte.
+                Le Wùo Taï est né dans l’esprit de Roland Combes, ostéopathe, il y a une vingtaine d’années. Il le développe à travers le monde avec son épouse Nathalie.
+            </p>
+            <p>Le wùo Taï se pratique habillé dans une tenue souple et confortable.</p>
+            <p>Le Wùo Taï peut se décliner sous 2 formules :</p>
+            <p><strong>Séance individuelle</strong></p>
+            <p>
+                <strong>Formule duo :</strong> Pour une pratique autonome à 2.
+                Sur une séance de 2h, nous identifions ensemble vos besoins, je vous transmets 2 ou 3 gestes que vous pourrez pratiquer ensuite en autonomie.
+                Nous nous retrouverons 1 mois plus tard pour une séance d’1h de supervision et corrections nécessaires.
+            </p>
+        </section>
+        <section style="margin-top: 120px;">
+            <h2>Massage facial japonais (Kobido)</h2>
+            <p>Plus qu’un massage, c’est un art très ancien qui figure parmi les meilleurs soins au monde et qui porte autant d’attention au plan énergétique et spirituel qu’à l’esthétisme et la beauté. Il stimule les muscles et tissus du visage de la superficie à la profondeur. La nuque, le cou et le décolleté sont aussi travaillés.</p>
+            <p>Outre son effet anti-âge indéniable, le massage japonais et la sollicitation de points précis stimulent activement le système lymphatique entraînant ainsi l’élimination des toxines. La peau est ainsi oxygénée, la microcirculation relancée, le teint plus clair comme repulpé de l’intérieur. Les techniques de ce massage ont l’avantage de convenir à tous les types de peau et sont particulièrement recommandées aux peaux matures. Les muscles du visage et du cou sont tonifiés, le Chi ou “l’énergie vitale” est mieux équilibré pour procurer détente, relaxation et bien-être immédiat.</p>
+            <p>C’est avant tout un soin énergétique.</p>
+        </section>
+        <section>
+            <h2>Qui suis-je</h2>
+            <p>Danseuse, j’ai enseigné la danse contemporaine durant 30 ans au Conservatoire Henri Dutilleux à Belfort. 
+            Mon attrait pour l’anatomie a nourri mon enseignement et j’ai souvent pu déceler des déséquilibres, désordres voire des anomalies dans le corps de mes élèves.
+            Ma rencontre avec le Wùo Taï,  il y a 6 ans, fut une révélation pour moi : au milieu de toutes les techniques somatiques que j’avais traversées au cours de ma carrière de danseuse, j’ai trouvé là un soin profond en lien direct avec le système nerveux central qui va beaucoup plus loin que ce que j’ai pu pratiquer auparavant.</p>
+            <p>Puis le hasard m’amène à rencontrer le Kobido, massage ancestral japonais. Je découvre un art très ancien qui s’apparente à une chorégraphie solennelle.</p>
+            <p>Le Wùo Taï est la danse des gestes, le Kobido est la danse des mains. Je poursuis mon chemin de danse…</p>
+            <p>J’ai été formée par Roland Combes, créateur du Wùo Taï et par Dr Shogo Mochizuki, maître Kobido de la 26ème génération.</p>
+        </section>
+        <section class="prices">
+            <h2>Wùo Taï</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="insight" style="background-image: url('/media/cressources/IMG-0784.webp');">
+                        <h3>Séance individuelle</h3>
+                    </div>
+                    <div class="details">
+                        <div class="data">
+                            <p>1 heure</p>
+                            <p>Individuelle</p>
+                        </div>
+                        <a href="">
+                            <div class="reservation">
+                                <span>Réserver • 60 €</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="insight" style="background-image: url('/media/cressources/IMG-0784.webp');">
+                        <h3>Forfait 3 séances individuelles</h3>
+                    </div>
+                    <div class="details">
+                        <div class="data">
+                            <p>3 x 1 heure</p>
+                            <p>Individuelle</p>
+                        </div>
+                        <a href="">
+                            <div class="reservation">
+                                <span>Réserver • 150 €</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="insight" style="background-image: url('/media/cressources/IMG-0784.webp');">
+                        <h3>Formule Duo</h3>
+                    </div>
+                    <div class="details">
+                        <div class="data">
+                            <p>2h heures de ...</p>
+                            <p>1h heures de ...</p>
+                            <p>Livret de suivi</p>
+                            <p>Deux personnes</p>
+                        </div>
+                        <a href="">
+                            <div class="reservation">
+                                <span>Réserver • 180 €</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prices">
+            <h2>Massage facial japonais</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="insight" style="background-image: url('/media/cressources/IMG-0784.webp');">
+                        <h3>Soin</h3>
+                    </div>
+                    <div class="details">
+                        <div class="data">
+                            <p>1 heure</p>
+                            <p>Individuelle</p>
+                        </div>
+                        <a href="">
+                            <div class="reservation">
+                                <span>Réserver • 80 €</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="insight" style="background-image: url('/media/cressources/IMG-0784.webp');">
+                        <h3>Forfait 3 soins</h3>
+                    </div>
+                    <div class="details">
+                        <div class="data">
+                            <p>3 x 1 heure</p>
+                            <p>Individuelle</p>
+                        </div>
+                        <a href="">
+                            <div class="reservation">
+                                <span>Réserver • 195 €</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

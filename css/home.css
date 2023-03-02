@@ -15,6 +15,7 @@ body header .background{
     position: absolute;
     width: 100%;
     height: 100%;
+    background-color: #004852;
     background-size: cover;
     background-position:center;
     -webkit-transition: background-image 1s ease-in-out;
@@ -27,14 +28,17 @@ body header .header {
     height: 100%;
 }
 body header nav {
+    z-index: 10000;
     width: 100%;
-    height: 100px;
+    height: 50px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
+    transition: margin 0.4s, color 0.4s, background-color 0.4s;
 }
 body header nav a {
     display: block;
-    margin: 25px 50px;
+    margin: 0 50px;
     text-decoration: none;
     line-height: 50px;
     font-size: 20px;
@@ -70,4 +74,87 @@ body header .presentation h2 {
     text-align: center;
     font-weight: inherit;
     line-height: 50px;
+}
+body main {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    margin-top: 100vh;
+}
+body main section {
+    width: 60%;
+    margin: 60px auto;
+}
+body main section h2 {
+    text-align: center;
+    font-size: 30px;
+}
+body main section p {
+    text-align: center;
+    line-height: 24px;
+}
+body main .prices {
+    width: 100%;
+    margin: 0;
+    background-color: #FFF;
+    color: #FFF;
+    padding: 30px 0;
+}
+body main .prices h2 {
+    color: #004852;
+    margin: 20px;
+}
+body main .prices .cards {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body main .prices .cards .card {
+    width: 300px;
+    margin: 30px 60px;
+    background-color: #004852;
+}
+body main .prices .cards .card .insight{
+    width: 100%;
+    height: 100px;
+    background-color: #D4AC0D;
+    background-size: cover;
+    background-position:center;
+}
+body main .prices .cards .card .insight h3 {
+    margin: 0;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+body main .prices .cards .card .details {
+    width: 100%;
+    height: calc(100% - 100px);
+}
+body main .prices .cards .card .data {
+    height: calc(100% - 50px);
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+body main .prices .cards .card .data p {
+    margin: 5px 0;
+}
+body main .prices .cards .card a {
+    text-decoration: none;
+    color: #FFF;
+}
+body main .prices .cards .card .reservation {
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    background-color: #D4AC0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

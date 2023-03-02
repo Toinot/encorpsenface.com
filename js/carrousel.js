@@ -27,9 +27,10 @@ $(document).ready(function() {
     ];
     var i = 0;
     function run(tab) {
-        console.log(tab[i]);
-        $(dest).css('background-image', 'url(' + path + tab[i] + ')');
-        i = (i + 1) % tab.length;
+        if (images.length > 0) {
+            $(dest).css('background-image', 'url(' + path + tab[i] + ')');
+            i = (i + 1) % tab.length;
+        }
     }
     run(images);
     setInterval(run, 5000, images);
