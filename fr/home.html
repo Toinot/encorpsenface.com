@@ -8,26 +8,41 @@
     <link rel="stylesheet" href="/css/home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/js/carrousel.js"></script>
+    <script src="/js/panel.js"></script>
     <script src="/js/logo.js"></script>
 </head>
 <body>
+    <div class="panel" id="panel">
+        <div class="close-panel" id="close-panel">
+            <img src="/media/icons/x-lg.svg" alt="Close the panel">
+        </div>
+        <h3>Réservation par téléphone</h3>
+        <a href="tel:+33684025066">+33 6 84 02 50 66</a>
+    </div>
     <header>
+        <nav>
+            <a href="#main" class="menu">Découvrir</a>
+            <span class="desktop title">En Corps En Face</span>
+            <span id="open-panel" class="menu">Réserver</span>
+        </nav>
+    </header>
+    <div class="page-header">
         <div class="background" id="carrousel"></div>
-        <div class="header">
-            <nav>
-                <a href="">Découvrir</a>
-                <a href="">Réserver</a>
-            </nav>
+        <div class="container">
             <div class="welcome logo">
                 <img src="/fr/media/logo.png" style="max-width: 25%;" alt="">
                 <img src="/fr/media/logo_text.svg" id="logo-text" style="opacity: 0; transition: opacity 1s; max-width: 100%;" alt="">
             </div>
             <div class="welcome presentation">
-                <h2>Wùo Taï | Osteodanse & Massage facial japonais | Kobido</h2>
+                <h2 class="desktop">Wùo Taï | Osteodanse & Massage facial japonais | Kobido</h2>
+                <h2 class="mobile">
+                    Wùo Taï | Osteodanse<br>
+                    Massage facial japonais | Kobido
+                </h2>
             </div>
         </div>
-    </header>
-    <main>
+    </div>
+    <main id="main">
         <section>
             <h2>Wùo Taï</h2>
             <p>
@@ -158,5 +173,8 @@
             </div>
         </section>
     </main>
+    <footer>
+        <h3>Pied de page en construction</h3>
+    </footer>
 </body>
 </html>
