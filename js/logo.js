@@ -1,20 +1,46 @@
-$('.logo-header').ready( function () {
-    $('#logo-text').css('opacity', 1);
-});
-$(window).scroll(function() {
-    $(this).unbind("mouseenter mouseleave");
-    var windowHeight = $(window).height();
-    var windowScroll = $(window).scrollTop();
+window.addEventListener('DOMContentLoaded', function() {
+    var logoText = document.getElementById('logo-text');
+    logoText.style.opacity = '1';
+});  
+window.onscroll = function() {
+    var windowHeight = window.innerHeight;
+    var windowScroll = window.pageYOffset;
+
     if (windowScroll > windowHeight - 80) {
-        $('nav').css('padding-top', '30px');
-        $('nav').css('background-color', '#FFF');
-        $('nav .menu').css('color', '#004852');
-        $('nav .desktop').css('opacity', '1');
+        var nav = document.getElementsByTagName("nav");
+        var menu;
+        var desktop;
+        for (let i = 0; i < nav.length; i++) {
+            nav[i].style.paddingTop = "30px";
+            nav[i].style.backgroundColor = "#FFF";
+            menu = nav[i].getElementsByClassName("menu");
+            for (let j = 0; j < menu.length; j++) {
+                menu[j].style.color = "#004852";
+            }
+            desktop = nav[i].getElementsByClassName("desktop");
+            for (let j = 0; j < desktop.length; j++) {
+                desktop[j].style.opacity = "1";
+            }
+        }
     } else {
-        $('nav').css('padding-top', '55px');
-        $('nav').css('background-color', 'rgba(255, 255, 255, 0)');
-        $('nav .menu').css('color', '#FFF');
-        $('nav .desktop').css('opacity', '0');
+        var nav = document.getElementsByTagName("nav");
+        var menu;
+        var desktop;
+        for (let i = 0; i < nav.length; i++) {
+            nav[i].style.paddingTop = "55px";
+            nav[i].style.backgroundColor = "rgba(255, 255, 255, 0)";
+            menu = nav[i].getElementsByClassName("menu");
+            for (let j = 0; j < menu.length; j++) {
+                menu[j].style.color = "#FFF";
+            }
+            desktop = nav[i].getElementsByClassName("desktop");
+            for (let j = 0; j < desktop.length; j++) {
+                desktop[j].style.opacity = "0";
+            }
+        }
     }
-    $('.welcome').css('opacity', 1 - windowScroll / (windowHeight / 2) );
-});
+    var welcome = document.getElementsByClassName('welcome');
+    for (let i = 0; i < welcome.length; i++) {
+        welcome[i].style.opacity = 1 - windowScroll / (windowHeight / 2);
+    }
+}

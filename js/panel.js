@@ -1,8 +1,11 @@
-$('#open-panel').click(function() {
-    console.log('open panel');
-    $('#panel').css('right', '0');
-});
-$('#close-panel').click(function() {
-    console.log('close panel');
-    $('#panel').css('right', '-50%');
+window.addEventListener('DOMContentLoaded', function() {
+    var openPanel = document.getElementsByClassName('open-panel');
+    for (let i = 0; i < openPanel.length; i++) {
+        openPanel[i].onclick = function() {
+            $('#panel').css('right', '0');
+        }
+    }
+    document.getElementById('close-panel').onclick = function() {
+        $('#panel').css('right', '');
+    }
 });
